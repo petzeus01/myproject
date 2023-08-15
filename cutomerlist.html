@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>dashBoard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins',sans-serif;
+        
+        }
+        body{
+          min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .sidebar{
+            position: fixed;
+            background: rgb(11, 7, 48);
+            width: 36vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .ico{
+            width: 15px;
+            height: 15px;
+        }
+        label{
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            padding-top: 10px;
+            text-align: center;
+        }
+        i{
+            padding-right: 10px;
+        }
+        a{
+          color: aliceblue; 
+          font-size: 21px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+        }
+        a:hover{
+            background: white;
+            color: rgb(13, 13, 59);
+        }
+        .dropdow{
+            width: 30vh;
+            background: #07073f;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            border: 1px solid#c7c7e6;
+            border-radius: 7px;
+            position: fixed;
+            
+        
+        }.dropdow li{
+            display: block;
+        
+        }
+        ul li .dropdow:hover{
+            background: #61619b;
+        
+        }
+        .drop:hover .dropdow{
+            display: block;
+        }
+        .hov{
+            background: white;
+            color: #0b0a3b;
+        }
+        h2{
+            color: aliceblue;
+             background: #0b0a3b;
+             position: fixed;
+             left: 50%;
+             top: 0;
+             padding: 0 50px;
+        }
+        .box{
+          
+            position: fixed;
+            top: 10vh;
+            left: 37vh;
+            right: 0;
+        }
+        table, tr, th, td{
+            border: 1px solid;
+            top: 10vh;
+        
+        }
+        .new{
+            background: rgb(11, 11, 68);
+            padding: 5px 10px;
+            border: none;
+            border-radius: 20px;
+            width: 150px;
+            height: 40px;
+            float: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        .new:hover{
+            background: rgb(248, 248, 252);
+             color: rgb(6, 6, 46);
+             padding: 3px 8px;
+             border: 2px solid #0b0a3b;
+             border-radius: 20px;
+             align-items: center;
+        }
+        th{
+            height: 1vh;
+            width: 40vh;
+        }
+        td{
+            height: 5vh;
+        }
+        .head{
+            left: 36vh;
+            top: 0;
+            background: #070d31;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <label><i class="fa-solid fa-house"></i>HOME</label>
+        <br>
+        <ul>
+            <li> <a  href="dash.html"><i class="fa-brands fa-dashcube"></i>DASHBOARD</a></li>
+            <li class="drop"> <a  href="#"><i class="fa-brands fa-product-hunt"></i>PRODUCTS ></a>
+              <ul class="dropdow">
+              <li> <a href="stockin.html">PRODUCT LIST</a></li>
+              <li> <a href="addnew.html">ADD NEW PRODUCTS</a></li>
+              </ul>
+            </li>
+            <li class="drop"> <a href="#"><i class="fa-brands fa-product-hunt"></i>SALES ></a>
+              <ul class="dropdow">
+              <li> <a href="saleslist.html">SALES LIST</a></li>
+              <li> <a href="sales.html">ADD NEW SALES</a></li>
+              </ul>
+              <li class="drop"> <a href="#"><i class="fa-solid fa-truck-field-un"></i>SUPPLIER ></a>
+                <ul class="dropdow">
+                <li> <a href="supply.html">ADD NEW SUPPLIER</a></li>
+                <li> <a href="suppliers.html">SUPLIER LIST</a></li>
+                </ul>   
+               </li>  
+            <li> <a href="stock in.html"><i class="fa-solid fa-cart-shopping"></i>PURCHASE</a></li>
+            <li> <a href="stockout.html"><i class="fa-solid fa-money-bill-trend-up"></i>STOCK OUT</a></li>
+            <li class="drop"> <a class="hov" href="#"><i class="fa-solid fa-magnifying-glass"></i>CUSTOMER ></a>
+                <ul class="dropdow">
+                <li> <a href="customer.html">ADD NEW CUSTOMER</a></li>
+                <li> <a href="cutomerlist.html">CUSTOMER LIST</a></li>
+                </ul>   
+               </li>
+            <li> <a href="home.html"><i class="fa-solid fa-right-from-bracket"></i>LOG OUT</a></li>
+          </ul>
+    </div>
+    <div class="head">
+    <h2>CUSTOMER LIST</h2>
+    <a class="new" href="customer.html">ADD NEW CUSTOMERS</a>
+    <div class="box">
+       <table>
+        <tr>
+            <th style="width: 10px;">ID #</th>
+            
+            <th>CUSTOMER NAME</th>
+            <th>CONTACT ADDRESS</th>
+            <th>ADRESS</th>
+            
+            <th>DATE ADDED</th>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+        <tr>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+            <td>   </td>
+        </tr>
+       </table>
+    </div>
+        
+    </body>
+</html>

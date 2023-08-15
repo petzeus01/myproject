@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'popins',sans-serif;
+        
+        }
+        body{
+          min-height: 100vh;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .btn{
+            background: rgb(11, 11, 68);
+            padding: 5px 10px;
+            text-align: center;
+            border: none;
+            border-radius: 6px;
+        }
+        .btn:hover{
+             background: rgb(248, 248, 252);
+             color: rgb(6, 6, 46);
+             padding: 3px 8px;
+             border: 2px solid #0b0a3b;
+             border-radius: 6px;
+        }
+        .sidebar{
+            position: fixed;
+            background: rgb(11, 7, 48);
+            width: 36vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        h2{
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .ico{
+            width: 15px;
+            height: 15px;
+        }
+        
+        i{
+            padding-right: 10px;
+        }
+        a{
+          color: aliceblue; 
+          font-size: 21px;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+        }
+        a:hover{
+            background: white;
+            color: rgb(13, 13, 59);
+        }
+        .dropdow{
+            width: 75%;
+            background: #07073f;
+            position: absolute;
+            z-index: 999;
+            display: none;
+            border: 1px solid#c7c7e6;
+            border-radius: 7px;
+            position: fixed;
+            
+        
+        }.dropdow li{
+            display: block;
+        
+        }
+        ul li .dropdow:hover{
+            background: #61619b;
+        
+        }
+        .drop:hover .dropdow{
+            display: block;
+        }
+        .hov{
+             background: white;
+             color: #0b0a3b;
+        }
+        .container {
+            background-image: url(stoc.jpg);
+            background-size: cover;
+            width: 100%;
+           position: fixed;
+           top: 10vh;
+           left: 36vh;
+           right: 0;
+           height: 100%
+           
+          
+          
+        
+        }
+        .header{
+            
+            position: fixed;
+            top: 0;
+            left: 36vh;
+            right: 0;
+            height: 10vh;
+            background: rgb(11, 7, 48);
+            display: flex;
+            align-items: center;
+            justify-content: center;   
+        }
+        form{
+            position: fixed;
+            top: 15%;
+            left: 40%;
+            background: white;
+            height: 70%;
+            width: 30%;
+            text-align: center;
+            border: none;
+            border-radius: 30px;
+        }
+        label{
+            color: #0b0a3b;
+            align-items: center;
+            display: flex;
+            padding-left: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        input{
+            width: 50%;
+            height: 25px;
+        }
+        .manage{
+            position: fixed;
+            right: 0;
+            background: #483f74;
+            border: 1px solid;
+
+        }
+        h3{
+            color: #f3f3f8;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2><i class="fa-solid fa-house"></i>HOME</h2>
+        <br>
+        <ul>
+            <li> <a  href="dash.html"><i class="fa-brands fa-dashcube"></i>DASHBOARD</a></li>
+            <li class="drop"> <a class="hov" href="#"><i class="fa-brands fa-product-hunt"></i>PRODUCTS ></a>
+              <ul class="dropdow">
+              <li> <a href="stockin.html">PRODUCT LIST</a></li>
+              <li> <a href="addnew.html">ADD NEW PRODUCTS</a></li>
+              </ul>
+            </li>
+            <li class="drop"> <a href="#"><i class="fa-brands fa-product-hunt"></i>SALES ></a>
+              <ul class="dropdow">
+              <li> <a href="saleslist.html">SALES LIST</a></li>
+              <li> <a href="sales.html">ADD NEW SALES</a></li>
+              </ul>
+              <li class="drop"> <a href="#"><i class="fa-solid fa-truck-field-un"></i>SUPPLIER</a>
+                <ul class="dropdow">
+                <li> <a href="supply.html">ADD NEW SUPPLIER</a></li>
+                <li> <a href="suppliers.html">SUPLIER LIST</a></li>
+                </ul>   
+               </li>  
+            <li> <a href="stock in.html"><i class="fa-solid fa-cart-shopping"></i>PURCHASE</a></li>
+            <li> <a href="stockout.html"><i class="fa-solid fa-money-bill-trend-up"></i>STOCK OUT</a></li>
+            <li> <a href="find.html"><i class="fa-solid fa-magnifying-glass"></i>CUSTOMERS</a></li>
+            <li> <a href="home.html"><i class="fa-solid fa-right-from-bracket"></i>LOG OUT</a></li>
+          </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h3>ADD NEW PRODUCTS</h3>
+            <a class="manage" href="stockin.html">MANAGE PRODUCTS</a>
+        </div>
+        <form>
+           <label>PRODUCT TITLE</label>
+           <input type="text">
+           <label>PRODUCT PICTURE</label>
+          <input type="file">
+           <label>QUANTITY</label>
+           <input type="number">
+           <label>SELLING PRICE</label>
+           <input type="dollar">
+           <label>BUYING PRICE</label>
+           <input type="dollar">
+           <label>DATE</label>
+           <input type="date">
+           <input type="submit">
+    </div>
+</body>
+</html>
+    <
