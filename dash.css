@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=poppins:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+
+}
+body{
+  min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+
+}
+
+.dropdow{
+    width: 33vh;
+    background: #07073f;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border: 1px solid#c7c7e6;
+    border-radius: 7px;
+    position: fixed;
+    
+
+}.dropdow li{
+    display: block;
+
+}
+ul li .dropdow:hover{
+    background: #61619b;
+
+}
+.drop:hover .dropdow{
+    display: block;
+}
+
+.btn{
+    background: rgb(11, 11, 68);
+    padding: 5px 10px;
+    text-align: center;
+    border: none;
+    width: 30%;
+    height: 50%;
+    border-radius: 6px;
+}
+.btn:hover{
+     background: rgb(248, 248, 252);
+    
+     color: rgb(6, 6, 46);
+     padding: 3px 8px;
+     border: 2px solid #0b0a3b;
+     border-radius: 6px;
+}
+.sidebar{
+    position: fixed;
+    background: rgb(11, 7, 48);
+    width: 36vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+label{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+.ico{
+    width: 15px;
+    height: 15px;
+}
+
+i{
+    padding-right: 10px;
+}
+a{
+  color: aliceblue; 
+  font-size: 21px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+a:hover{
+    background: white;
+    color: rgb(13, 13, 59);
+}
+.hov{
+     background: white;
+     color: #0b0a3b;
+}
+.container {
+   position: absolute;
+   right: 0;
+   width: 80vh;
+   height: 100vh;
+  
+
+}
+img{
+    height: 8vh;
+    width: 5vh;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 36vh;
+    right: 0;
+    height: 10vh;
+    background: rgb(11, 7, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    
+}
+.nav{
+    background: #d7d7f3;
+    position: absolute;
+    left: 33vh;
+    right: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.search{
+    flex: 3;
+    background: #0a0a44;
+
+}
+input[type=text]{
+    border: 1px solid;
+    background: white;
+    padding: 10px;
+    width: 50%;
+    height: 9vh;
+    float: left;
+}
+ .button{
+    height: 9vh;
+    width: 9vh;
+    border: none;
+
+ }
+
+.user{
+    flex: 1;
+    background: rgb(216, 216, 228);
+}
+.imgcase{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.imagecase{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+}
+.pict{
+    position: absolute;
+    left: 10vh; 
+    top: 0;
+    
+
+}
+.content
+{
+    background: #e3e3eb;
+    position: fixed;
+    top: 10vh;
+    left: 36vh;
+    right: 0;
+   
+  
+}.cards{
+    padding: 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 200px;
+    height: 100px;
+    background: rgb(158, 169, 219);
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow:  4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+    border-radius: 10px;
+}
+.content2{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.recent{
+    height: 500px;
+    width: 500px;
+    flex: 5;
+    background: rgb(193, 200, 228);
+    margin: 0 25px 25px 25px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+}
+.new{
+    flex: 2;
+    background: rgb(164, 169, 201);
+    width: 50%;
+    height: 50%;
+    margin: 0 25px;
+    box-shadow: 4px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 0 ;
+}
+.chart{
+    
+    width: 400px;
+    height: 300px;
+}
+table{
+    border: 4px solid #111111;
+  
+    height: 10%; 
+  
+}
+th{
+    background: #0a0a44;
+    color: #fffcfc;
+    border: 1px solid;
+   border-collapse: 4px;
+    height: 14px;
+
+}
+tr{ background: #c4c4d1;
+    border: 1px solid;
+    
+    height: 10px;
+}
+td{
+    border: 1px solid;
+   
+    height:10px ;
+}
+
+

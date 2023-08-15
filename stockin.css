@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+
+}
+body{
+  min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.dropdow{
+    width: 30vh;
+    background: #07073f;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border: 1px solid#c7c7e6;
+    border-radius: 7px;
+    position: fixed;
+    
+
+}.dropdow li{
+    display: block;
+
+}
+ul li .dropdow:hover{
+    background: #61619b;
+
+}
+.drop:hover .dropdow{
+    display: block;
+}
+.sidebar{
+    position: fixed;
+    background: rgb(11, 7, 48);
+    width: 33vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+img{
+    width: 15px;
+    height: 15px;
+}
+h2{
+ 
+  color: white;
+  align-items: center;
+}
+a{
+  color: aliceblue; 
+  font-size: 21px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+a:hover{
+    background: rgb(249, 248, 250);
+    color: rgb(13, 13, 59);
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.hov{
+    background: white;
+    color: #1a0f5a;
+}
+.ico{
+    background: rgb(250, 250, 252);
+    color: blue;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.container{
+    position: fixed;
+    background-image: url(stoc.jpg);
+    top: 10vh;
+    left: 33vh;    
+    align-items: center;
+}
+form{
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    background: white;
+    height: 500px;
+    width: 440px;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+}
+label{
+    color: #0b0a3b;
+    align-items: center;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+input{
+    width: 50%;
+    height: 25px;
+}
+.manage{
+    position: fixed;
+    right: 0;
+    background: #483f74;
+    border: 1px solid;
+
+}
+

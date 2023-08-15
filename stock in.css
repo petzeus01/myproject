@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popins',sans-serif;
+
+}
+body{
+  min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.sidebar{
+    position: fixed;
+    background: rgb(11, 7, 48);
+    width: 36vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.ico{
+    width: 15px;
+    height: 15px;
+}
+label{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+}
+i{
+    padding-right: 10px;
+}
+a{
+  color: aliceblue; 
+  font-size: 21px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+a:hover{
+    background: white;
+    color: rgb(13, 13, 59);
+}
+.dropdow{
+    width: 30vh;
+    background: #07073f;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border: 1px solid#c7c7e6;
+    border-radius: 7px;
+    position: fixed;
+    
+
+}.dropdow li{
+    display: block;
+
+}
+ul li .dropdow:hover{
+    background: #61619b;
+
+}
+.drop:hover .dropdow{
+    display: block;
+}
+.hov{
+    background: white;
+    color: #0b0a3b;
+}
+h3{
+    color: aliceblue;
+     background: #0b0a3b;
+     position: fixed;
+     left: 50%;
+     top: 0;
+     padding: 0 50px;
+     padding-top: 4vh;
+}
+.box{
+    position: fixed;
+    top: 10vh;
+    left: 37vh;
+    right: 0;
+}
+table, tr, th, td{
+    border: 1px solid;
+    top: 10vh;
+
+}
+.new{
+    background: rgb(11, 11, 68);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.new:hover{
+    background: rgb(248, 248, 252);
+     color: rgb(6, 6, 46);
+     padding: 3px 8px;
+     border: 2px solid #0b0a3b;
+     border-radius: 20px;
+     align-items: center;
+}
+th{
+    height: 1vh;
+    width: 40vh;
+}
+td{
+    height: 5vh;
+}
+.head{
+    background: rgb(11, 7, 48);;
+}
